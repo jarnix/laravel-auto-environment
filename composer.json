@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Jarnix\\LaravelAutoEnvironment\\": "src/"
+            "Jarnix\\LaravelAutoEnvironment": "src/"
         }
     },
     "autoload-dev": {
