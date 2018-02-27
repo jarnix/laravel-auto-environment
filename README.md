@@ -23,7 +23,9 @@ Put your different configuration files in the app's "/config" folder, or another
 - local.env
 - testing.env
 - production.env.
- 
+
+Parameters
+-- 
 You can customize these parameters:
 
 - envsFolder: where you put the .env files (local.env, production.env...)
@@ -32,13 +34,19 @@ You can customize these parameters:
 - urlTestingRegexp: the regexp for the http host in testing mode (http)
 - urlProductionRegexp: the regexp for the http host in prod mode (http)
 
-2) You can also force the environment you want by creating a file called "env" at the root of the app, containing the environment you want to load. 
+You can force the environment everywhere
+--
+You can also force the environment you want by creating a file called "env" at the root of the app, containing the environment you want to load. 
 
 This code will then load the "env" file that you want in the "envsFolder" folder. For example: if the file's content is "local" => the file : /config/local.env will be loaded
 
-2') You can obviously force the environment by using :
+You can still force the environment in artisan
+--
+If you haven't created a env file, you can still obviously force the environment by using:
 ```
 php artisan --env=testing
 ```
 
-3) And you can use a .env file as usual, this will then bypass this code.
+Or use a .env file
+--
+And you can use a .env file as usual, this will then bypass this code.
