@@ -1,0 +1,32 @@
+{
+    "name": "jarnix/laravel-auto-environment",
+    "description": "Auto-detection and configuration of the environment with multiple env files",
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Julien Ricard",
+            "email": "jarnix@jarnix.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "jarnix\\LaravelAutoEnvironment\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8|^5.2",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/",
+        "post-package-install": [
+            "jarnix\\LaravelAutoEnvironment\\Installer::postInstall"
+        ]
+    }
+}
