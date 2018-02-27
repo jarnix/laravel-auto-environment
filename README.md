@@ -1,8 +1,7 @@
----
 For Laravel 5+
-
+---
 Auto-detects the application environment with the hostname or http host
-
+---
 Allows for multiple environments and versioned "env" files.
 ---
 
