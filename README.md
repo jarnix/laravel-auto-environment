@@ -1,12 +1,16 @@
---------------------------------------------------------------------------
- Auto-detects the application environment
---------------------------------------------------------------------------
+---
+For Laravel 5+
+Auto-detects the application environment with the hostname or http host
+Allows for multiple environments and versioned "env" files.
+---
 
  Detects the application environment from a env file or the hostname or
  http host. A .env file will always overwrite any other file (default
  Laravel's behavior)
 
- Use this code by adding this in bootstrap/app.php (
+ Use this code by adding this in bootstrap/app.php 
+
+ ```
     \Jarnix\LaravelAutoEnvironment::init($app, [
       'envsFolder' => '/config',
       'hostLocalRegexp' => '/vagrantphp7',
@@ -14,6 +18,7 @@
       'urlTestingRegexp' => '/test\.webedev.com/',
       'urlProductionRegexp' => '/www\.webedev.com/'
     ]);
+```
 
  Put your different configuration files in the app's "config"
  folder, or another folder (specified as a parameter):
