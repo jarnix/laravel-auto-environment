@@ -10,7 +10,7 @@ Detects the application environment from a env file or the hostname or http host
 Use this code by adding this in bootstrap/app.php 
 
 ```
-\Jarnix\LaravelAutoEnvironment::init($app, [
+\Jarnix\LaravelAutoEnvironment\Loader::init($app, [
     'envsFolder' => '/config',
     'hostLocalRegexp' => '/vagrantphp7',
     'urlLocalRegexp' => '/l\.webedev\.com/',
