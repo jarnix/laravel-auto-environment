@@ -1,7 +1,6 @@
 {
     "name": "jarnix/laravel-auto-environment",
     "description": "Auto-detection and configuration of the environment with multiple env files",
-    "minimum-stability": "stable",
     "require": {
         "laravel/framework": "^5.5"
     },
