@@ -40,4 +40,5 @@ This code will then load the "env" file that you want in the "envsFolder" folder
 ```
 php artisan --env=testing
 ```
+
 3) And you can use a .env file as usual, this will then bypass this code.
