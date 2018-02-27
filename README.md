@@ -19,10 +19,7 @@ Use this code by adding this in bootstrap/app.php
 ]);
 ```
 
-Put your different configuration files in the app's "config" folder, or another folder (specified as a parameter):
-
-(eg: local.env, testing.env, production.env)
-
+Put your different configuration files in the app's "/config" folder, or another folder (specified as a parameter), local.env, testing.env, production.env.
  
 1) You can use the autodetect feature of this code:
 ```
