@@ -16,11 +16,6 @@
             "Jarnix\\LaravelAutoEnvironment\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "jarnix\\LaravelAutoEnvironment\\Tests\\": "tests/"
-        }
-    },
     "require-dev": {
         "orchestra/testbench": "3.x",
         "phpunit/phpunit": "^4.8|^5.2",
@@ -29,9 +24,6 @@
     "scripts": {
         "test": "phpunit",
         "check-style": "phpcs -p --standard=PSR2 src/",
-        "fix-style": "phpcbf -p --standard=PSR2 src/",
-        "post-package-install": [
-            "jarnix\\LaravelAutoEnvironment\\Installer::postInstall"
-        ]
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
     }
 }
