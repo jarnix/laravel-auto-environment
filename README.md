@@ -20,9 +20,9 @@ Use this code by adding this in bootstrap/app.php
 ```
 
 Put your different configuration files in the app's "/config" folder, or another folder (specified as the 'envsFolder' parameter) :
-- local.env
-- testing.env
-- production.env.
+- .env.local
+- .env.testing
+- .env.production
 
 Parameters
 -- 
@@ -38,7 +38,7 @@ You can force the environment everywhere
 --
 You can also force the environment you want by creating a file called "env" at the root of the app, containing the environment you want to load. 
 
-This code will then load the "env" file that you want in the "envsFolder" folder. For example: if the file's content is "local" => the file : /config/local.env will be loaded
+This code will then load the "env" file that you want in the "envsFolder" folder. For example: if the file's content is "local" => the file : /config/.env.local will be loaded
 
 You can still force the environment in artisan
 --
